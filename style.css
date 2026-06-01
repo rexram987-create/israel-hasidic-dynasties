@@ -40,19 +40,17 @@ body {
 }
 
 .top-nav {
-  position: relative;
-  z-index: 10;
+  position: static;
+  z-index: 50;
   display: flex;
   justify-content: center;
   gap: 0.7rem;
   flex-wrap: wrap;
-  width: min(1120px, calc(100% - 2rem));
-  margin: 0 auto 3rem;
   padding: 0.85rem 1rem;
-  background: rgba(11, 15, 20, 0.72);
+  margin: 0 -1.5rem 0;
+  background: rgba(11, 15, 20, 0.86);
   backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border-bottom: 1px solid var(--border);
 }
 
 .top-nav a {
@@ -73,7 +71,7 @@ body {
 
 .hero-content {
   width: min(980px, 100%);
-  margin: 0 auto 2rem;
+  margin: 6rem auto 2rem;
   text-align: center;
 }
 
@@ -205,8 +203,7 @@ footer p {
     justify-content: flex-start;
     overflow-x: auto;
     flex-wrap: nowrap;
-    border-radius: 22px;
-    margin-bottom: 2rem;
+    margin: 0 -1.5rem 0;
   }
 
   .top-nav a {
